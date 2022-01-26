@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/stylelayout.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/app.js"></script>
-    <title>Dasagis Nation</title>
+    <title>Phanomeister</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <style>
       .self {
@@ -23,31 +23,49 @@
       }
     </style>
   </head>
-  <body>
-    <div style="background-color:#330066;">
-      <div class="row" >
-        <div class="col" style="text-align: center;">
-          <a href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
+  <body id="color_mode">
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a href="index.html" class="navbar-brand"><img src="images/logofinal.png" alt="Phan's Logo" width="80" height="76" class="d-inline-block align-top"/><span class="hidden">Phanomeister</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu"
+          aria-expanded="false"
+          aria-lable="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+          <ul class="navbar-nav ms-auto text-center">
+            <li>
+              <a class="nav-link" href="work.html">Workspace and Blogs</a>
+            </li>
+            <li>
+              <a class="nav-link" href=todo.html>Upcoming features</a>
+            </li>
+            <li>
+              <div class="nav-link" onclick="switchColorTheme()">🌓</div>
+            </li>
+          </ul>
         </div>
-        <div class="col" style="text-align: center;">
-          <a href="work.html"><button type="button" class="btn btn-primary">My work</button></a>
-        </div>
-        <div class="col" style="text-align: center;">
-          <a href="todo.html"><button type="button" class="btn btn-primary">To-do List</button></a>
-        </div>
-      </div>
+      </nav>
     </div>
-    <hr>
+    <br>
     <div class = "display_txt">
-      <p style="color: white" title="hello and welcome to my website :)" id="intro">
-        Welcome to Matthew Phan's website! I am also known for Dasagi and CSE major at University of California, Irvine.
-      </p>
+      <h1 style="color: white" title="hello and welcome to my website :)" id="intro">
+        Welcome to Matthew Phan's website!
+      </h1>
+      <h1 id="intro">I am also known for Phanomeister and this is all about me.</h1>
       <br>
-      <button onclick="revealMessage()">About This Website</button>
-      <br>
+      <button onclick="revealMessage()" style="margin-left:30px;">About The Progress</button>
+      <br> 
       <p id ="process" style="display:none">I am <em id="top">still</em> in the process of building my website... Wait for it :)</p>
-      <img class="self" src="images/me.PNG" alt="Unable to lead image" title="Picture of me at the beach" />
-      <p>@minhphan2003</p>
+      <img class="self" src="images/me.PNG" alt="Unable to lead image" title="Picture of me at the beach" style="margin-top:5px;"/>
+      <p style="margin-top:5px; margin-left:35px; margin-bottom:5px;">@minhphan2003</p>
+      <div id="wave">✌️</div>
     </div>
   </body>
-</html>
+</html> 

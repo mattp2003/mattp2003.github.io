@@ -1,7 +1,8 @@
 function revealMessage() {
-    document.getElementById("process").style.display = "block";
+    document.getElementById("process").style.display = "block"; 
 }
 
-function hideMessage() {
-    document.getElementById("process").style.display = "none";
+function switchColorTheme() {
+    var sId = document.body.id === "color_mode" ? "dark_mode" : "color_mode";
+    document.body.id = sId;
 }

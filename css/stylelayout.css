@@ -1,5 +1,9 @@
-body {
-    background-color: rgb(0,0,91);
+#color_mode {
+    background-color: #e2c2b3;
+}
+
+#dark_mode {
+    background-color: #181032;
 }
 
 h1 {
@@ -17,7 +21,7 @@ a:link
     text-decoration: none;
 }
 a:visited {
-    color: pink;
+    color: purple;
     background-color: transparent;
     text-decoration: none;
 }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="home.html" class="active">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Experiences</a>
+            <a href="#contacts">Contact Me</a>
+        </nav>
+    </header>
+    <div class="intro">
+        <h1>About Me</h1>
+        <div class="about">
+            <img src="../resources/me.jpg">
+            <div id="about-content">
+                <p>
+                    Hi! It's Matthew Phan, a passionate <b>Computer Science</b> student
+                    at the University of California, Irvine, with a minor in <b>Entrepreneurship and Innovation</b>. 
+                    When I code, I am driven to uphold three core qualities: consistency, cleanliness, and scalability.
+                    <br><br>
+                    When I'm not coding, you'll find me playing video games, competing in badminton,
+                    or cooking. 
+                </p>
+                <div id="about-box">
+                    <div id="education">
+                        <div class="title">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="about__icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>
+                            <h2>Education</h2>
+                        </div>
+                        <ul>
+                            <li>Major: Computer Science</li>
+                            <li>Minor: Entrepreneurship &amp; Innovation</li>
+                            <li>Expected: June 2025</li>
+                            <li>GPA: 3.7/4.0</li>
+                        </ul>
+                    </div>
+                    <div id="skills">
+                        <div class="title">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="about__icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path></svg>
+                            <h2>Skills</h2>
+                        </div>
+                        <ul>
+                            <li>Full-stack Development</li>
+                            <li>OOP &amp; DSA</li>
+                            <li>DevOps &amp; Infrastructure</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- <div class="experiences">
+        <h3>What Skills I Have</h3>
+        <h1>My Experience</h1>
+        <div id="skills-specific">
+
+        </div>
+        <div id="projects">
+
+        </div>
+    </div> -->
+    <div id="contacts">
+        <h1>Contact Me</h1>
+        <p>Email: mnhat1603@gmail.com</p>
+        <p>Phone: (+1) 951-456-8447</p>
+        <div id="socials">
+            <a href="https://www.linkedin.com/in/nhatphanm/" target="_blank">
+                <svg stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://github.com/mattp2003" target="_blank">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+            </a>
+            <div class="vertical-bar"></div>
+        </div>
+    </div>
+</body>
+</html>

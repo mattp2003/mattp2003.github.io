@@ -1,7 +1,8 @@
 // Navbar 
 const navMenu = document.getElementById('sidebar'),
       navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
+      navClose = document.getElementById('nav-close'),
+      navLinks = document.querySelectorAll('.nav__link');
 
 if(navToggle) {
     navToggle.addEventListener("click", () => {
@@ -14,6 +15,13 @@ if(navClose) {
         navMenu.classList.remove('show-sidebar');
     })
 }
+
+// Close sidebar automatically when a nav link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('show-sidebar');
+    });
+});
 
 // Skills Functions
 const tabs = document.querySelectorAll('[data-target]'),

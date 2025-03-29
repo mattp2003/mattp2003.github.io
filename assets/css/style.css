@@ -315,6 +315,7 @@ input {
 
 .home__img {
     display: none;
+    border-radius: 5%;
 }
 
 .home__title {

@@ -264,12 +264,29 @@ input {
 }
 
 /*===== Home Section =====*/
-.home {
+/* .home {
     background: url('../img/luffy.jpg'); 
     background-color: var(--box-color);
     background-size: cover;
     background-position: 50% center;
     height: 100vh;
+} */
+.home {
+    /* Remove background image and color */
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none; /* Allows interaction with content above */
 }
 
 .home__container {
@@ -1211,6 +1228,7 @@ textarea.input {
 
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
+
     .about__img {
         width: 250px;
     }
@@ -1285,6 +1303,10 @@ textarea.input {
 }
 
 @media screen and (max-width: 576px) {
+    .home__video {
+        display: none;
+    }
+
     .nav__toggle {
         right: initial;
         left: 1.5rem;
@@ -1337,6 +1359,10 @@ textarea.input {
         padding: 0;
     }
 
+    .about__img {
+        display: none;
+    }
+
     .experiences__modal-content {
         padding: 4.5rem 1.5rem 2.5rem;
     }
@@ -1365,6 +1391,10 @@ textarea.input {
 
 /* For Small Devices */
 @media screen and (max-width: 350px) {
+    .home__video {
+        display: none;
+    }
+
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);

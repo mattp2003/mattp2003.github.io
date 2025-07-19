@@ -713,6 +713,7 @@ input {
     background-color: var(--box-color);
     padding: 6rem 0 2rem 2.5rem;
     border-radius: .25rem;
+    margin-top: 1.8rem;
 }
 
 .experiences__icon {
